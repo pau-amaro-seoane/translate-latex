@@ -1,5 +1,4 @@
-Summary
-=======
+# Summary
 
 This programme translates a tex file using google translate. Since feeding
 latex commands to google translate leads to problems, what this programme does
@@ -9,24 +8,32 @@ placeholders, translate the text, and then place back the commands.
 The default translates from English into Spanish but you can change this
 in line 10 of translate.py:
 
+```
 translator = GoogleTranslator(source='en', target='es')
+```
 
-First create a virtual environment and make sure it's python3
-=============================================================
+## Usage
 
-$ python3 -m venv env
+* First create a virtual environment and make sure it's python3
 
-Activate it
-============
+```
+python3 -m venv env
+```
 
+* Activate it
+
+```
 source ./env/bin/activate
+```
 
-Install dependencies
-=====================
+* Install dependencies
 
-$ pip install deep_translator
+```
+pip install deep_translator
+```
 
-Use it like this
-=================
+* Use it like this
 
-$ python translate.py yourfile.tex
+```
+python translate.py yourfile.tex
+```
