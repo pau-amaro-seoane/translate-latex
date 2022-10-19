@@ -29,7 +29,7 @@ source ./env/bin/activate
 * Install dependencies
 
 ```
-pip install deep_translator
+pip install -r requirements.txt
 ```
 
 * Use it like this
