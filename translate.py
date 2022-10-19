@@ -7,7 +7,7 @@ from subprocess import check_call
 # input filename
 filename = sys.argv[1]
 
-translator = GoogleTranslator(source='en', target='es')
+translator = GoogleTranslator(source="en", target="es")
 
 data = None
 with open(filename) as f:
@@ -46,9 +46,14 @@ with open(f"es_{filename}", "w") as f:
     f.write("\n\n".join(new_sections))
 
 # Cleaning files
-_files = ["gtexfix_commands", "gtexfix_comments", "gtexfix_latex",
-      "tmp.tex", "tmp_0.txt", "translated_tmp_0.tex",
-      "translated_tmp_0.txt"]
+_files = [
+    "gtexfix_commands",
+    "gtexfix_comments",
+    "gtexfix_latex",
+    "tmp.tex",
+    "tmp_0.txt",
+    "translated_tmp_0.tex",
+    "translated_tmp_0.txt",
+]
 for _f in _files:
     os.remove(_f)
-
