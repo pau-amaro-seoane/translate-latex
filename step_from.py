@@ -115,7 +115,7 @@ class FromStep():
             for c in self.corrupted:
                 print(c, end=" ")
             print("\nTo improve the output manually change the corrupted tokens in file"
-                  f"{args.filename} and run from.py again.")
+                  f"{self.filename} and run from.py again.")
 
 
     def read_files(self):
