@@ -14,6 +14,7 @@ def get_pattern_scope(v):
         "align",
         "displaymath",
         "gather",
+        "tikzpicture",
     ]
     patterns = [fr"\\{v}{{ *{w}\** *}}" for w in words]
     if v == "begin":
