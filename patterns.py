@@ -33,6 +33,7 @@ def get_pattern_commands():
         r"\\subsubsection\**",
         r"\\textbf\**",
         r"\\textit\**",
+        r"\\plain\**",
         r"\\emph\**",
         r"\\underline\**",
         r"~*\\footnote[0-9]*",
